@@ -19,7 +19,8 @@ export default async function handler(req, res) {
   for (const event of events) {
 
     if (event.type === "message" && event.message.type === "text") {
-
+console.log("EVENT:", JSON.stringify(event));
+console.log("SENDING FLEX");
       await client.replyMessage(
         event.replyToken,
         {
