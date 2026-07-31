@@ -1,0 +1,197 @@
+{
+  "type": "flex",
+  "altText": "Wedding Information",
+  "contents": {
+    "type": "carousel",
+    "contents": [
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://placehold.co/1040x700/png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "backgroundColor": "#ECE4D9",
+          "contents": [
+            {
+              "type": "text",
+              "text": "📍 สถานที่",
+              "weight": "bold",
+              "size": "xl",
+              "color": "#AB9384"
+            },
+            {
+              "type": "text",
+              "text": "Courtyard by Marriott Phuket Town\n08 DEC 2026",
+              "wrap": true,
+              "margin": "md",
+              "color": "#6F625B"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "color": "#AB9384",
+              "action": {
+                "type": "uri",
+                "label": "เปิด Google Maps",
+                "uri": "https://maps.google.com"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://placehold.co/1040x700/png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "backgroundColor": "#ECE4D9",
+          "contents": [
+            {
+              "type": "text",
+              "text": "👗 ธีมสี",
+              "weight": "bold",
+              "size": "xl",
+              "color": "#AB9384"
+            },
+            {
+              "type": "text",
+              "text": "Earth Tone Wedding\nเปิดดูโทนสีสำหรับงาน",
+              "wrap": true,
+              "margin": "md",
+              "color": "#6F625B"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "color": "#AB9384",
+              "action": {
+                "type": "uri",
+                "label": "ดูธีมสี",
+                "uri": "https://coolors.co/ab9384-d1c7be-ece4d9-e8d6d4-ebcfcc-d4b0a5"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://placehold.co/1040x700/png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "backgroundColor": "#ECE4D9",
+          "contents": [
+            {
+              "type": "text",
+              "text": "🕒 กำหนดการ",
+              "weight": "bold",
+              "size": "xl",
+              "color": "#AB9384"
+            },
+            {
+              "type": "text",
+              "text": "Timeline จะเปลี่ยนเป็นภาพ Canva ของคุณ",
+              "wrap": true,
+              "margin": "md",
+              "color": "#6F625B"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "color": "#AB9384",
+              "action": {
+                "type": "uri",
+                "label": "ดูรายละเอียด",
+                "uri": "https://example.com/timeline"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "hero": {
+          "type": "image",
+          "url": "https://placehold.co/1040x700/png",
+          "size": "full",
+          "aspectRatio": "20:13",
+          "aspectMode": "cover"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "backgroundColor": "#ECE4D9",
+          "contents": [
+            {
+              "type": "text",
+              "text": "📝 กรุณาตอบกลับ",
+              "weight": "bold",
+              "size": "xl",
+              "color": "#AB9384"
+            },
+            {
+              "type": "text",
+              "text": "กรุณาตอบรับเพื่อความสะดวกในการจัดเตรียมที่นั่ง",
+              "wrap": true,
+              "margin": "md",
+              "color": "#6F625B"
+            }
+          ]
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "style": "primary",
+              "color": "#AB9384",
+              "action": {
+                "type": "uri",
+                "label": "ตอบรับเข้าร่วมงาน",
+                "uri": "https://forms.google.com"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
