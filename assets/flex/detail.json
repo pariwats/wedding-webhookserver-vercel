@@ -1,0 +1,57 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/location.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://maps.app.goo.gl/nZ58J1Tn4v5G4kKR9"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/theme.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://coolors.co/ab9384-d1c7be-ece4d9-e8d6d4-ebcfcc-d4b0a5"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/rsvp.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://forms.gle/8JQdpHE3xKragVmf8"
+        }
+      }
+    }
+  ]
+}
