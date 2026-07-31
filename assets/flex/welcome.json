@@ -18,44 +18,51 @@
         {
           "type": "text",
           "text": "PARIWAT",
-          "size": "xl",
           "weight": "bold",
+          "size": "xl",
           "align": "center"
         },
         {
           "type": "text",
           "text": "💙",
           "size": "lg",
-          "align": "center"
+          "align": "center",
+          "margin": "sm"
         },
         {
           "type": "text",
           "text": "SIRINAPHAT",
-          "size": "xl",
           "weight": "bold",
+          "size": "xl",
           "align": "center"
+        },
+        {
+          "type": "separator",
+          "margin": "lg"
         },
         {
           "type": "text",
           "text": "08 DEC 2026",
-          size": "md",
-          weight": "bold",
-          align": "center",
-          margin": "lg"
+          "weight": "bold",
+          "size": "md",
+          "align": "center",
+          "margin": "lg"
         },
         {
           "type": "text",
           "text": "@Courtyard by Marriott\nPhuket Town",
-          size": "md",
-          align": "center",
-          wrap": true
+          "size": "md",
+          "align": "center",
+          "wrap": true,
+          "margin": "sm"
         },
         {
           "type": "text",
           "text": "#MNTGT4EVER",
-          size": "sm",
-          align": "center",
-          margin": "md"
+          "size": "sm",
+          "color": "#888888",
+          "align": "center",
+          "margin": "md"
         }
       ]
     },
@@ -63,14 +70,14 @@
       "type": "box",
       "layout": "vertical",
       "spacing": "sm",
-      contents": [
+      "contents": [
         {
           "type": "button",
           "style": "primary",
           "action": {
             "type": "message",
             "label": "💍 ข้อมูลงาน",
-            "text": "ข้อมูล งาน"
+            "text": "ข้อมูลงาน"
           }
         },
         {
