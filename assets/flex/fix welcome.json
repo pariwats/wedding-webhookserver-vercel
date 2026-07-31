@@ -39,23 +39,23 @@
           "text": "08 DEC 2026",
           "weight": "bold",
           "size": "lg",
-          align": "center",
-          margin": "lg"
+          "align": "center",
+          "margin": "lg"
         },
         {
           "type": "text",
           "text": "@Courtyard by Marriott Phuket Town",
-          size": "md",
-          align": "center",
-          wrap": true
+          "size": "md",
+          "align": "center",
+          "wrap": true
         },
         {
           "type": "text",
           "text": "#MNTGT4EVER",
-          size": "sm",
-          color": "#888888",
-          align": "center",
-          margin": "md"
+          "size": "sm",
+          "color": "#888888",
+          "align": "center",
+          "margin": "md"
         }
       ]
     },
@@ -63,7 +63,7 @@
       "type": "box",
       "layout": "vertical",
       "spacing": "sm",
-      contents": [
+      "contents": [
         {
           "type": "button",
           "style": "primary",
