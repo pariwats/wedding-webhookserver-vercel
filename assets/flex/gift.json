@@ -1,0 +1,81 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://YOUR-VERCEL-DOMAIN/assets/gift/qr.png",
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Wedding Gift",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "ขอขอบพระคุณสำหรับความรักและคำอวยพรของทุกท่าน",
+        "size": "sm",
+        wrap": true,
+        align": "center",
+        margin": "md"
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "margin": "lg",
+        "spacing": "sm",
+        "contents": [
+          {
+            "type": "text",
+            "text": "บัญชีสำหรับร่วมแสดงความยินดี",
+            "weight": "bold",
+            "size": "md"
+          },
+          {
+            "type": "text",
+            "text": "ชื่อบัญชี: กรุณาระบุชื่อ",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "ธนาคาร: กรุณาระบุธนาคาร",
+            "size": "sm"
+          },
+          {
+            "type": "text",
+            "text": "เลขบัญชี: XXXXXXXX",
+            "size": "sm"
+          }
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "clipboard",
+          "label": "📋 คัดลอกเลขบัญชี",
+          "clipboardText": "XXXXXXXX"
+        }
+      }
+    ]
+  }
+}
