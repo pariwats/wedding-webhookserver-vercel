@@ -1,0 +1,24 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu.png",
+    "size": "full",
+    "aspectRatio": "1:1",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "รายการอาหาร",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      }
+    ]
+  }
+}
