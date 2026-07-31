@@ -56,8 +56,8 @@ export default async function handler(req, res) {
         event.replyToken,
         {
           type: "flex",
-          altText: flex.altText || "Wedding Information",
-          contents: flex.contents
+          altText: "Wedding Information",
+          contents: flex
         }
       );
 
