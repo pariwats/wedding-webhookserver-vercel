@@ -1,0 +1,97 @@
+{
+  "type": "flex",
+  "altText": "PARIWAT ❤️ SIRINAPHAT Wedding Invitation",
+  "contents": {
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://placehold.co/1040x700/png",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "contents": [
+        {
+          "type": "text",
+          "text": "PARIWAT ❤️ SIRINAPHAT",
+          "weight": "bold",
+          "size": "xl",
+          "align": "center",
+          "wrap": true
+        },
+        {
+          "type": "text",
+          "text": "WEDDING INVITATION",
+          "size": "sm",
+          "color": "#888888",
+          "align": "center"
+        },
+        {
+          "type": "separator",
+          "margin": "lg"
+        },
+        {
+          "type": "text",
+          "text": "08 DEC 2026",
+          "weight": "bold",
+          "size": "lg",
+          align": "center",
+          margin": "lg"
+        },
+        {
+          "type": "text",
+          "text": "@Courtyard by Marriott Phuket Town",
+          size": "md",
+          align": "center",
+          wrap": true
+        },
+        {
+          "type": "text",
+          "text": "#MNTGT4EVER",
+          size": "sm",
+          color": "#888888",
+          align": "center",
+          margin": "md"
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "sm",
+      contents": [
+        {
+          "type": "button",
+          "style": "primary",
+          "action": {
+            "type": "message",
+            "label": "📍 LOCATION",
+            "text": "location"
+          }
+        },
+        {
+          "type": "button",
+          "style": "primary",
+          "action": {
+            "type": "message",
+            "label": "📝 RSVP",
+            "text": "rsvp"
+          }
+        },
+        {
+          "type": "button",
+          "style": "primary",
+          "action": {
+            "type": "message",
+            "label": "🎁 GIFT",
+            "text": "gift"
+          }
+        }
+      ]
+    }
+  }
+}
