@@ -1,0 +1,32 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://YOUR-VERCEL-DOMAIN/assets/menu/menu.jpg",
+    "size": "full",
+    "aspectRatio": "3:4",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Wedding Menu",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "เมนูอาหารภายในงาน",
+        "size": "sm",
+        "wrap": true,
+        "align": "center",
+        "margin": "md"
+      }
+    ]
+  }
+}
