@@ -1,4 +1,5 @@
 import { Client } from "@line/bot-sdk";
+import welcome from "../assets/flex/welcome.json" with { type: "json" };
 
 const client = new Client({
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
@@ -22,8 +23,9 @@ export default async function handler(req, res) {
       await client.replyMessage(
         event.replyToken,
         {
-          type: "text",
-          text: "ขอบคุณที่ติดต่อ Wedding LINE OA 💍\nระบบกำลังเตรียมข้อมูลสำหรับงานแต่งงานของเรา"
+          type: "flex",
+          altText: welcome.altText,
+          contents: welcome.contents
         }
       );
 
