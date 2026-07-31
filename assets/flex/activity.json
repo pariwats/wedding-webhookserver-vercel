@@ -1,0 +1,74 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-01.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กิจกรรมที่ 1",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-02.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กิจกรรมที่ 2",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-03.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "กิจกรรมที่ 3",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
+      }
+    }
+  ]
+}
