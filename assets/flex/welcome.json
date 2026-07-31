@@ -13,49 +13,49 @@
     "body": {
       "type": "box",
       "layout": "vertical",
-      "spacing": "md",
+      "spacing": "sm",
       "contents": [
         {
           "type": "text",
-          "text": "PARIWAT ❤️ SIRINAPHAT",
-          "weight": "bold",
+          "text": "PARIWAT",
           "size": "xl",
-          "align": "center",
-          "wrap": true
-        },
-        {
-          "type": "text",
-          "text": "WEDDING INVITATION",
-          "size": "sm",
-          "color": "#888888",
+          "weight": "bold",
           "align": "center"
         },
         {
-          "type": "separator",
-          "margin": "lg"
+          "type": "text",
+          "text": "💙",
+          "size": "lg",
+          "align": "center"
+        },
+        {
+          "type": "text",
+          "text": "SIRINAPHAT",
+          "size": "xl",
+          "weight": "bold",
+          "align": "center"
         },
         {
           "type": "text",
           "text": "08 DEC 2026",
-          "weight": "bold",
-          "size": "lg",
-          "align": "center",
-          "margin": "lg"
+          size": "md",
+          weight": "bold",
+          align": "center",
+          margin": "lg"
         },
         {
           "type": "text",
-          "text": "@Courtyard by Marriott Phuket Town",
-          "size": "md",
-          "align": "center",
-          "wrap": true
+          "text": "@Courtyard by Marriott\nPhuket Town",
+          size": "md",
+          align": "center",
+          wrap": true
         },
         {
           "type": "text",
           "text": "#MNTGT4EVER",
-          "size": "sm",
-          "color": "#888888",
-          "align": "center",
-          "margin": "md"
+          size": "sm",
+          align": "center",
+          margin": "md"
         }
       ]
     },
@@ -63,14 +63,14 @@
       "type": "box",
       "layout": "vertical",
       "spacing": "sm",
-      "contents": [
+      contents": [
         {
           "type": "button",
           "style": "primary",
           "action": {
             "type": "message",
-            "label": "📍 LOCATION",
-            "text": "location"
+            "label": "💍 ข้อมูลงาน",
+            "text": "ข้อมูลงาน"
           }
         },
         {
@@ -78,17 +78,8 @@
           "style": "primary",
           "action": {
             "type": "message",
-            "label": "📝 RSVP",
+            "label": "📝 กรุณาตอบกลับ",
             "text": "rsvp"
-          }
-        },
-        {
-          "type": "button",
-          "style": "primary",
-          "action": {
-            "type": "message",
-            "label": "🎁 GIFT",
-            "text": "gift"
           }
         }
       ]
