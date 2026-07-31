@@ -1,73 +1,57 @@
-import { Client } from "@line/bot-sdk";
-
-import welcome from "../assets/flex/welcome.json" with { type: "json" };
-import detail from "../assets/flex/detail.json" with { type: "json" };
-import menu from "../assets/flex/menu.json" with { type: "json" };
-import seating from "../assets/flex/seating.json" with { type: "json" };
-import activity from "../assets/flex/activity.json" with { type: "json" };
-import gift from "../assets/flex/gift.json" with { type: "json" };
-
-
-const client = new Client({
-  channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
-  channelSecret: process.env.CHANNEL_SECRET,
-});
-
-
-const flexMessages = {
-  "รายละเอียด": detail,
-  "เมนู": menu,
-  "แผนผังที่นั่ง": seating,
-  "กิจกรรม": activity,
-  "ร่วมยินดีกับบ่าวสาว": gift
-};
-
-
-export default async function handler(req, res) {
-
-  if (req.method !== "POST") {
-    return res.status(200).json({
-      status: "Wedding LINE OA Webhook is running"
-    });
-  }
-
-
-  const events = req.body.events;
-
-
-  for (const event of events) {
-
-    if (
-      event.type === "message" &&
-      event.message.type === "text"
-    ) {
-
-      console.log("EVENT:", JSON.stringify(event));
-
-
-      const userMessage = event.message.text;
-
-
-      const flex =
-        flexMessages[userMessage] || welcome;
-
-
-      await client.replyMessage(
-        event.replyToken,
-        {
-          type: "flex",
-          altText: "Wedding Information",
-          contents: flex
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/location.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://maps.app.goo.gl/nZ58J1Tn4v5G4kKR9"
         }
-      );
-
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/theme.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://coolors.co/ab9384-d1c7be-ece4d9-e8d6d4-ebcfcc-d4b0a5"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/rsvp.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover",
+        "action": {
+          "type": "uri",
+          "uri": "https://forms.gle/8JQdpHE3xKragVmf8"
+        }
+      }
     }
-
-  }
-
-
-  res.status(200).json({
-    status: "ok"
-  });
-
+  ]
 }
