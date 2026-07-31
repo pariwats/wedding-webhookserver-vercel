@@ -1,0 +1,67 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://YOUR-VERCEL-DOMAIN/assets/venue/venue.jpg",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "md",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Wedding Venue",
+        "weight": "bold",
+        "size": "xl"
+      },
+      {
+        "type": "text",
+        "text": "รายละเอียดสถานที่จัดงาน",
+        "size": "sm",
+        "wrap": true
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      },
+      {
+        "type": "text",
+        "text": "วันจัดงาน: กรุณาระบุวันที่",
+        "size": "sm",
+        margin": "lg"
+      },
+      {
+        "type": "text",
+        "text": "เวลา: กรุณาระบุเวลา",
+        "size": "sm"
+      },
+      {
+        "type": "text",
+        "text": "สถานที่: กรุณาระบุชื่อสถานที่",
+        "size": "sm",
+        wrap": true
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "color": "#6B8E23",
+        "action": {
+          "type": "uri",
+          "label": "📍 เปิด Google Maps",
+          "uri": "YOUR_GOOGLE_MAP_LINK"
+        }
+      }
+    ]
+  }
+}
