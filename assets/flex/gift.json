@@ -1,12 +1,5 @@
 {
   "type": "bubble",
-  "hero": {
-    "type": "image",
-    "url": "https://YOUR-VERCEL-DOMAIN/assets/gift/qr.png",
-    "size": "full",
-    "aspectRatio": "1:1",
-    "aspectMode": "cover"
-  },
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -14,18 +7,25 @@
     "contents": [
       {
         "type": "text",
-        "text": "Wedding Gift",
+        "text": "ร่วมยินดีกับบ่าวสาว",
         "weight": "bold",
         "size": "xl",
         "align": "center"
       },
       {
         "type": "text",
-        "text": "ขอขอบพระคุณสำหรับความรักและคำอวยพรของทุกท่าน",
+        "text": "การที่คุณมาร่วมงานแต่งงานของเรา คือของขวัญที่ยิ่งใหญ่ที่สุด\n\nหากคุณต้องการอวยพรเราเพิ่มเติม โปรดสแกนคิวอาร์โค้ดด้านล่าง หรือ โอนเข้าบัญชี",
         "size": "sm",
         wrap": true,
-        align": "center",
-        margin": "md"
+        "margin": "lg"
+      },
+      {
+        "type": "image",
+        "url": "https://YOUR-VERCEL-DOMAIN/assets/gift/qr.png",
+        "size": "md",
+        "aspectMode": "fit",
+        "align": "center",
+        "margin": "lg"
       },
       {
         "type": "separator",
@@ -34,28 +34,23 @@
       {
         "type": "box",
         "layout": "vertical",
-        "margin": "lg",
         "spacing": "sm",
+        "margin": "lg",
         "contents": [
           {
             "type": "text",
-            "text": "บัญชีสำหรับร่วมแสดงความยินดี",
+            "text": "นางสาวสิรินภัส และ นายปริวรรต",
             "weight": "bold",
             "size": "md"
           },
           {
             "type": "text",
-            "text": "ชื่อบัญชี: กรุณาระบุชื่อ",
+            "text": "ธนาคาร : 🟢 KBANK 🟢",
             "size": "sm"
           },
           {
             "type": "text",
-            "text": "ธนาคาร: กรุณาระบุธนาคาร",
-            "size": "sm"
-          },
-          {
-            "type": "text",
-            "text": "เลขบัญชี: XXXXXXXX",
+            "text": "เลขที่บัญชี : 233-1-28865-1",
             "size": "sm"
           }
         ]
@@ -73,7 +68,16 @@
         "action": {
           "type": "clipboard",
           "label": "📋 คัดลอกเลขบัญชี",
-          "clipboardText": "XXXXXXXX"
+          "clipboardText": "233-1-28865-1"
+        }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "uri",
+          "label": "📎 แนบสลิป",
+          "uri": "https://photos.app.goo.gl/jfRbdkJEZCgbBMYn7"
         }
       }
     ]
