@@ -1,6 +1,6 @@
 {
   "type": "flex",
-  "altText": "PARIWAT ❤️ SIRINAPHAT Wedding Invitation",
+  "altText": "PARIWAT 💙 SIRINAPHAT Wedding Invitation",
   "contents": {
     "type": "bubble",
     "hero": {
@@ -70,7 +70,7 @@
           "action": {
             "type": "message",
             "label": "💍 ข้อมูลงาน",
-            "text": "ข้อมูลงาน"
+            "text": "ข้อมูล งาน"
           }
         },
         {
