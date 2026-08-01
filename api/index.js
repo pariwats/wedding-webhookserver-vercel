@@ -48,25 +48,54 @@ export default async function handler(req, res) {
       const userMessage = event.message.text;
 
 
+      // =========================
+      // Slip Upload Instruction
+      // =========================
+      if (userMessage === "ส่งสลิป") {
+
+        try {
+          await client.replyMessage(
+            event.replyToken,
+            {
+              type: "text",
+              text: "กรุณาแนบรูปสลิปการโอนเงินในแชทนี้ได้เลยครับ 💚\n\nขอบคุณสำหรับคำอวยพรและการร่วมยินดีกับเราครับ"
+            }
+          );
+        } catch (err) {
+          console.error(
+            "LINE Reply Error:",
+            JSON.stringify(err.originalError?.response?.data, null, 2)
+          );
+        }
+
+        continue;
+      }
+
+
       const flex =
         flexMessages[userMessage] || welcome;
 
 
       try {
-  await client.replyMessage(
-    event.replyToken,
-    {
-      type: "flex",
-      altText: "Wedding Information",
-      contents: flex
-    }
-  );
-} catch (err) {
-  console.error(
-    "LINE Reply Error:",
-    JSON.stringify(err.originalError?.response?.data, null, 2)
-  );
-}
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "flex",
+            altText: "Wedding Information",
+            contents: flex
+          }
+        );
+
+      } catch (err) {
+
+        console.error(
+          "LINE Reply Error:",
+          JSON.stringify(err.originalError?.response?.data, null, 2)
+        );
+
+      }
+
     }
 
   }
