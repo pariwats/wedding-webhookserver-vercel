@@ -5,7 +5,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-01.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-01-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
@@ -28,7 +28,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-02.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-02-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
@@ -51,7 +51,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-03.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-03-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
