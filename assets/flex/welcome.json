@@ -73,8 +73,8 @@
         "style": "primary",
         "action": {
           "type": "message",
-          "label": "💍 ข้อมูลงาน",
-          "text": "ข้อมูลงาน"
+          "label": "💍 รายละเอียด",
+          "text": "รายละเอียด"
         }
       },
       {
@@ -83,7 +83,7 @@
         "action": {
           "type": "message",
           "label": "📝 กรุณาตอบกลับ",
-          "text": "rsvp"
+          "text": "กรุณาตอบกลับ"
         }
       }
     ]
