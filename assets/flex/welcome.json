@@ -81,9 +81,9 @@
         "type": "button",
         "style": "primary",
         "action": {
-          "type": "message",
+          "type": "uri",
           "label": "📝 กรุณาตอบกลับ",
-          "text": "กรุณาตอบกลับ"
+          "uri": "https://forms.gle/8JQdpHE3xKragVmf8"
         }
       }
     ]
