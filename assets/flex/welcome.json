@@ -5,7 +5,7 @@
     "type": "bubble",
     "hero": {
       "type": "image",
-      "url": "https://placehold.co/1040x700/png",
+      "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/welcome/welcome.png",
       "size": "full",
       "aspectRatio": "20:13",
       "aspectMode": "cover"
