@@ -7,21 +7,10 @@ import seating from "../assets/flex/seating.json" with { type: "json" };
 import activity from "../assets/flex/activity.json" with { type: "json" };
 import gift from "../assets/flex/gift.json" with { type: "json" };
 
-
 const client = new Client({
   channelAccessToken: process.env.CHANNEL_ACCESS_TOKEN,
   channelSecret: process.env.CHANNEL_SECRET,
 });
-
-
-const flexMessages = {
-  "รายละเอียด": detail,
-  "เมนู": menu,
-  "แผนผังที่นั่ง": seating,
-  "กิจกรรม": activity,
-  "ร่วมยินดีกับบ่าวสาว": gift
-};
-
 
 export default async function handler(req, res) {
 
@@ -31,12 +20,9 @@ export default async function handler(req, res) {
     });
   }
 
-
   const events = req.body.events;
 
-
   for (const event of events) {
-
 
     // =========================
     // Slip Image Received
@@ -47,7 +33,6 @@ export default async function handler(req, res) {
     ) {
 
       console.log("SLIP IMAGE RECEIVED:", JSON.stringify(event));
-
 
       try {
 
@@ -71,8 +56,9 @@ export default async function handler(req, res) {
       continue;
     }
 
-
-
+    // =========================
+    // Text Message
+    // =========================
     if (
       event.type === "message" &&
       event.message.type === "text"
@@ -80,9 +66,8 @@ export default async function handler(req, res) {
 
       console.log("EVENT:", JSON.stringify(event));
 
-
-      const userMessage = event.message.text;
-
+      const userMessage = event.message.text.trim();
+      const command = userMessage.toLowerCase();
 
       // =========================
       // Slip Upload Instruction
@@ -111,35 +96,36 @@ export default async function handler(req, res) {
         continue;
       }
 
+      // =========================
+      // Welcome Test
+      // =========================
+      if (command === "hi") {
 
-      const flex =
-        flexMessages[userMessage] || welcome;
+        try {
 
+          await client.replyMessage(
+            event.replyToken,
+            {
+              type: "flex",
+              altText: "Wedding Invitation",
+              contents: welcome
+            }
+          );
 
-      try {
+        } catch (err) {
 
-        await client.replyMessage(
-          event.replyToken,
-          {
-            type: "flex",
-            altText: "Wedding Information",
-            contents: flex
-          }
-        );
+          console.error(
+            "LINE Reply Error:",
+            JSON.stringify(err.originalError?.response?.data, null, 2)
+          );
 
-      } catch (err) {
-
-        console.error(
-          "LINE Reply Error:",
-          JSON.stringify(err.originalError?.response?.data, null, 2)
-        );
+        }
 
       }
 
     }
 
   }
-
 
   res.status(200).json({
     status: "ok"
