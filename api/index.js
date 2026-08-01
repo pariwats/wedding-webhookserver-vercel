@@ -12,6 +12,15 @@ const client = new Client({
   channelSecret: process.env.CHANNEL_SECRET,
 });
 
+const flexMessages = {
+  "รายละเอียด": detail,
+  "เมนู": menu,
+  "แผนผังที่นั่ง": seating,
+  "กิจกรรม": activity,
+  "ร่วมยินดีกับบ่าวสาว": gift,
+  "hi": welcome
+};
+
 export default async function handler(req, res) {
 
   if (req.method !== "POST") {
@@ -56,9 +65,6 @@ export default async function handler(req, res) {
       continue;
     }
 
-    // =========================
-    // Text Message
-    // =========================
     if (
       event.type === "message" &&
       event.message.type === "text"
@@ -67,7 +73,11 @@ export default async function handler(req, res) {
       console.log("EVENT:", JSON.stringify(event));
 
       const userMessage = event.message.text.trim();
-      const command = userMessage.toLowerCase();
+
+      const lookupKey =
+        userMessage.toLowerCase() === "hi"
+          ? "hi"
+          : userMessage;
 
       // =========================
       // Slip Upload Instruction
@@ -96,30 +106,29 @@ export default async function handler(req, res) {
         continue;
       }
 
-      // =========================
-      // Welcome Test
-      // =========================
-      if (command === "hi") {
+      const flex = flexMessages[lookupKey];
 
-        try {
+      if (!flex) {
+        continue;
+      }
 
-          await client.replyMessage(
-            event.replyToken,
-            {
-              type: "flex",
-              altText: "Wedding Invitation",
-              contents: welcome
-            }
-          );
+      try {
 
-        } catch (err) {
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "flex",
+            altText: "Wedding Information",
+            contents: flex
+          }
+        );
 
-          console.error(
-            "LINE Reply Error:",
-            JSON.stringify(err.originalError?.response?.data, null, 2)
-          );
+      } catch (err) {
 
-        }
+        console.error(
+          "LINE Reply Error:",
+          JSON.stringify(err.originalError?.response?.data, null, 2)
+        );
 
       }
 
