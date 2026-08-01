@@ -52,15 +52,21 @@ export default async function handler(req, res) {
         flexMessages[userMessage] || welcome;
 
 
-      await client.replyMessage(
-        event.replyToken,
-        {
-          type: "flex",
-          altText: "Wedding Information",
-          contents: flex
-        }
-      );
-
+      try {
+  await client.replyMessage(
+    event.replyToken,
+    {
+      type: "flex",
+      altText: "Wedding Information",
+      contents: flex
+    }
+  );
+} catch (err) {
+  console.error(
+    "LINE Reply Error:",
+    JSON.stringify(err.originalError?.response?.data, null, 2)
+  );
+}
     }
 
   }
