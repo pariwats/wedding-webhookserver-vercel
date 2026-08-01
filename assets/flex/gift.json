@@ -71,9 +71,9 @@
         "style": "primary",
         "color": "#7BA05B",
         "action": {
-          "type": "uri",
-          "label": "📎 แนบสลิป",
-          "uri": "https://photos.app.goo.gl/jfRbdkJEZCgbBMYn7"
+          "type": "message",
+          "label": "📩 ส่งสลิปผ่าน LINE",
+          "text": "ส่งสลิป"
         }
       }
     ]
