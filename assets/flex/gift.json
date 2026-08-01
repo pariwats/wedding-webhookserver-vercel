@@ -21,7 +21,7 @@
       },
       {
         "type": "text",
-        "text": "การที่คุณมาร่วมงานแต่งงานของเรา\nคือของขวัญที่ยิ่งใหญ่ที่สุด\n\nหากคุณต้องการอวยพรเราเพิ่มเติม\nโปรดสแกนคิวอาร์โค้ดด้านล่าง \nหรือ โอนเข้าบัญชี",
+        "text": "การที่คุณมาร่วมงานแต่งงานของเรา\nคือของขวัญที่ยิ่งใหญ่ที่สุด\n\nหากคุณต้องการอวยพรเราเพิ่มเติม\nโปรดสแกนคิวอาร์โค้ดด้านล่าง\nหรือโอนเข้าบัญชี",
         "wrap": true,
         "size": "sm",
         "margin": "lg"
@@ -48,33 +48,6 @@
         "weight": "bold",
         "size": "xl",
         "align": "center"
-      }
-    ]
-  },
-  "footer": {
-    "type": "box",
-    "layout": "vertical",
-    "spacing": "sm",
-    "contents": [
-      {
-        "type": "button",
-        "style": "primary",
-        "color": "#7BA05B",
-        "action": {
-          "type": "clipboard",
-          "label": "📋 คัดลอกเลขบัญชี",
-          "clipboardText": "233-1-28865-1"
-        }
-      },
-      {
-        "type": "button",
-        "style": "primary",
-        "color": "#7BA05B",
-        "action": {
-          "type": "uri",
-          "label": "📎 แนบสลิป",
-          "uri": "https://photos.app.goo.gl/jfRbdkJEZCgbBMYn7"
-        }
       }
     ]
   }
