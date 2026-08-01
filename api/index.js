@@ -37,6 +37,42 @@ export default async function handler(req, res) {
 
   for (const event of events) {
 
+
+    // =========================
+    // Slip Image Received
+    // =========================
+    if (
+      event.type === "message" &&
+      event.message.type === "image"
+    ) {
+
+      console.log("SLIP IMAGE RECEIVED:", JSON.stringify(event));
+
+
+      try {
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "text",
+            text: "ได้รับสลิปเรียบร้อยแล้วครับ 💚\n\nขอบคุณสำหรับการร่วมยินดีและคำอวยพรของคุณครับ"
+          }
+        );
+
+      } catch (err) {
+
+        console.error(
+          "LINE Reply Error:",
+          JSON.stringify(err.originalError?.response?.data, null, 2)
+        );
+
+      }
+
+      continue;
+    }
+
+
+
     if (
       event.type === "message" &&
       event.message.type === "text"
@@ -54,6 +90,7 @@ export default async function handler(req, res) {
       if (userMessage === "ส่งสลิป") {
 
         try {
+
           await client.replyMessage(
             event.replyToken,
             {
@@ -61,11 +98,14 @@ export default async function handler(req, res) {
               text: "กรุณาแนบรูปสลิปการโอนเงินในแชทนี้ได้เลยครับ 💚\n\nขอบคุณสำหรับคำอวยพรและการร่วมยินดีกับเราครับ"
             }
           );
+
         } catch (err) {
+
           console.error(
             "LINE Reply Error:",
             JSON.stringify(err.originalError?.response?.data, null, 2)
           );
+
         }
 
         continue;
