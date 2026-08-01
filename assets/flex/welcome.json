@@ -1,95 +1,91 @@
 {
-  "type": "flex",
-  "altText": "SIRINAPHAT 💙 PARIWAT Wedding Invitation",
-  "contents": {
-    "type": "bubble",
-    "hero": {
-      "type": "image",
-      "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/welcome/welcome.png",
-      "size": "full",
-      "aspectRatio": "20:13",
-      "aspectMode": "cover"
-    },
-    "body": {
-      "type": "box",
-      "layout": "vertical",
-      "spacing": "sm",
-      "contents": [
-        {
-          "type": "text",
-          "text": "SIRINAPHAT",
-          "weight": "bold",
-          "size": "xl",
-          "align": "center"
-        },
-        {
-          "type": "text",
-          "text": "💙",
-          "size": "lg",
-          "align": "center",
-          "margin": "sm"
-        },
-        {
-          "type": "text",
-          "text": "PARIWAT",
-          "weight": "bold",
-          "size": "xl",
-          "align": "center"
-        },
-        {
-          "type": "separator",
-          "margin": "lg"
-        },
-        {
-          "type": "text",
-          "text": "08 DEC 2026",
-          "weight": "bold",
-          "size": "md",
-          "align": "center",
-          "margin": "lg"
-        },
-        {
-          "type": "text",
-          "text": "@Courtyard by Marriott\nPhuket Town",
-          "size": "md",
-          "align": "center",
-          "wrap": true,
-          "margin": "sm"
-        },
-        {
-          "type": "text",
-          "text": "#MNTGT4EVER",
-          "size": "sm",
-          "color": "#888888",
-          "align": "center",
-          "margin": "md"
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/welcome/welcome.png",
+    "size": "full",
+    "aspectRatio": "20:13",
+    "aspectMode": "cover"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "text",
+        "text": "SIRINAPHAT",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "text": "💙",
+        "size": "lg",
+        "align": "center",
+        "margin": "sm"
+      },
+      {
+        "type": "text",
+        "text": "PARIWAT",
+        "weight": "bold",
+        "size": "xl",
+        "align": "center"
+      },
+      {
+        "type": "separator",
+        "margin": "lg"
+      },
+      {
+        "type": "text",
+        "text": "08 DEC 2026",
+        "weight": "bold",
+        "size": "md",
+        "align": "center",
+        "margin": "lg"
+      },
+      {
+        "type": "text",
+        "text": "@Courtyard by Marriott\nPhuket Town",
+        "size": "md",
+        "align": "center",
+        "wrap": true,
+        "margin": "sm"
+      },
+      {
+        "type": "text",
+        "text": "#MNTGT4EVER",
+        "size": "sm",
+        "color": "#888888",
+        "align": "center",
+        "margin": "md"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "spacing": "sm",
+    "contents": [
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "message",
+          "label": "💍 ข้อมูลงาน",
+          "text": "ข้อมูลงาน"
         }
-      ]
-    },
-    "footer": {
-      "type": "box",
-      "layout": "vertical",
-      "spacing": "sm",
-      "contents": [
-        {
-          "type": "button",
-          "style": "primary",
-          "action": {
-            "type": "message",
-            "label": "💍 ข้อมูลงาน",
-            "text": "ข้อมูลงาน"
-          }
-        },
-        {
-          "type": "button",
-          "style": "primary",
-          "action": {
-            "type": "message",
-            "label": "📝 กรุณาตอบกลับ",
-            "text": "rsvp"
-          }
+      },
+      {
+        "type": "button",
+        "style": "primary",
+        "action": {
+          "type": "message",
+          "label": "📝 กรุณาตอบกลับ",
+          "text": "rsvp"
         }
-      ]
-    }
+      }
+    ]
   }
 }
