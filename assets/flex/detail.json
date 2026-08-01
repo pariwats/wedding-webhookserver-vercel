@@ -13,6 +13,19 @@
           "type": "uri",
           "uri": "https://maps.app.goo.gl/nZ58J1Tn4v5G4kKR9"
         }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "📍 สถานที่",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
       }
     },
     {
@@ -27,6 +40,19 @@
           "type": "uri",
           "uri": "https://coolors.co/ab9384-d1c7be-ece4d9-e8d6d4-ebcfcc-d4b0a5"
         }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🎨 ธีมงานแต่ง",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
       }
     },
     {
@@ -37,6 +63,19 @@
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "🕒 กำหนดการ",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
       }
     },
     {
@@ -51,6 +90,19 @@
           "type": "uri",
           "uri": "https://forms.gle/8JQdpHE3xKragVmf8"
         }
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "📝 กรุณาตอบกลับ",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
       }
     }
   ]
