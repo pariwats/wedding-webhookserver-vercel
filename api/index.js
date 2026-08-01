@@ -73,11 +73,7 @@ export default async function handler(req, res) {
       console.log("EVENT:", JSON.stringify(event));
 
       const userMessage = event.message.text.trim();
-
-      const lookupKey =
-        userMessage.toLowerCase() === "hi"
-          ? "hi"
-          : userMessage;
+      const command = userMessage.toLowerCase();
 
       // =========================
       // Slip Upload Instruction
@@ -106,7 +102,9 @@ export default async function handler(req, res) {
         continue;
       }
 
-      const flex = flexMessages[lookupKey];
+      const flex =
+        flexMessages[command] ||
+        flexMessages[userMessage];
 
       if (!flex) {
         continue;
