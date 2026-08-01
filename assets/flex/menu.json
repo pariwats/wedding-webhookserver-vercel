@@ -2,7 +2,7 @@
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu.png",
+    "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v2.png",
     "size": "full",
     "aspectRatio": "1:1",
     "aspectMode": "cover"
