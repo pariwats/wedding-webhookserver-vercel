@@ -5,7 +5,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/location.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/location-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover",
@@ -32,7 +32,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/theme.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/theme-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover",
@@ -59,7 +59,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
@@ -82,7 +82,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/rsvp.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/rsvp-v2.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover",
