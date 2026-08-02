@@ -82,7 +82,7 @@
         "style": "primary",
         "action": {
           "type": "uri",
-          "label": "📝 กรุณาตอบกลับ",
+          "label": "📝 แบบตอบรับเข้าร่วมงาน",
           "uri": "https://forms.gle/8JQdpHE3xKragVmf8"
         }
       }
