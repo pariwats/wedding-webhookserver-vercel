@@ -14,8 +14,6 @@ const client = new Client({
 
 const flexMessages = {
   "รายละเอียด": detail,
-  "เมนู": menu,
-  "แผนผังที่นั่ง": seating,
   "กิจกรรม": activity,
   "ร่วมยินดีกับบ่าวสาว": gift,
   "hi": welcome
@@ -98,6 +96,51 @@ export default async function handler(req, res) {
           );
 
         }
+
+        continue;
+      }
+
+      // =========================
+      // Send Full Resolution Images
+      // =========================
+      if (userMessage === "เมนู") {
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "image",
+            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png",
+            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png"
+          }
+        );
+
+        continue;
+      }
+
+      if (userMessage === "แผนผังที่นั่ง") {
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "image",
+            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png",
+            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png"
+          }
+        );
+
+        continue;
+      }
+
+      if (userMessage === "กำหนดการ") {
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "image",
+            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png",
+            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png"
+          }
+        );
 
         continue;
       }
