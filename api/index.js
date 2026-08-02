@@ -2,8 +2,6 @@ import { Client } from "@line/bot-sdk";
 
 import welcome from "../assets/flex/welcome.json" with { type: "json" };
 import detail from "../assets/flex/detail.json" with { type: "json" };
-import menu from "../assets/flex/menu.json" with { type: "json" };
-import seating from "../assets/flex/seating.json" with { type: "json" };
 import activity from "../assets/flex/activity.json" with { type: "json" };
 import gift from "../assets/flex/gift.json" with { type: "json" };
 
