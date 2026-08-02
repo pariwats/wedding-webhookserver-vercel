@@ -29,6 +29,42 @@ export default async function handler(req, res) {
 
   for (const event of events) {
 
+
+    // =========================
+    // Follow Event (Add Friend)
+    // =========================
+    if (event.type === "follow") {
+
+      console.log(
+        "NEW FOLLOW:",
+        JSON.stringify(event)
+      );
+
+      try {
+
+        await client.replyMessage(
+          event.replyToken,
+          {
+            type: "flex",
+            altText: "Welcome to our Wedding",
+            contents: welcome
+          }
+        );
+
+      } catch (err) {
+
+        console.error(
+          "LINE Follow Reply Error:",
+          JSON.stringify(err.originalError?.response?.data, null, 2)
+        );
+
+      }
+
+      continue;
+    }
+
+
+
     // =========================
     // Slip Image Received
     // =========================
@@ -37,7 +73,10 @@ export default async function handler(req, res) {
       event.message.type === "image"
     ) {
 
-      console.log("SLIP IMAGE RECEIVED:", JSON.stringify(event));
+      console.log(
+        "SLIP IMAGE RECEIVED:",
+        JSON.stringify(event)
+      );
 
       try {
 
@@ -61,15 +100,22 @@ export default async function handler(req, res) {
       continue;
     }
 
+
+
     if (
       event.type === "message" &&
       event.message.type === "text"
     ) {
 
-      console.log("EVENT:", JSON.stringify(event));
+      console.log(
+        "EVENT:",
+        JSON.stringify(event)
+      );
 
       const userMessage = event.message.text.trim();
       const command = userMessage.toLowerCase();
+
+
 
       // =========================
       // Slip Upload Instruction
@@ -98,6 +144,8 @@ export default async function handler(req, res) {
         continue;
       }
 
+
+
       // =========================
       // Send Full Resolution Images
       // =========================
@@ -107,13 +155,17 @@ export default async function handler(req, res) {
           event.replyToken,
           {
             type: "image",
-            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png",
-            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png"
+            originalContentUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png",
+            previewImageUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png"
           }
         );
 
         continue;
       }
+
+
 
       if (userMessage === "แผนผังที่นั่ง") {
 
@@ -121,13 +173,17 @@ export default async function handler(req, res) {
           event.replyToken,
           {
             type: "image",
-            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png",
-            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png"
+            originalContentUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png",
+            previewImageUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/seating/seating-v1-full.png"
           }
         );
 
         continue;
       }
+
+
 
       if (userMessage === "กำหนดการ") {
 
@@ -135,13 +191,17 @@ export default async function handler(req, res) {
           event.replyToken,
           {
             type: "image",
-            originalContentUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png",
-            previewImageUrl: "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png"
+            originalContentUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png",
+            previewImageUrl:
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/detail/schedule-v2-full.png"
           }
         );
 
         continue;
       }
+
+
 
       const flex =
         flexMessages[command] ||
@@ -150,6 +210,7 @@ export default async function handler(req, res) {
       if (!flex) {
         continue;
       }
+
 
       try {
 
@@ -174,6 +235,7 @@ export default async function handler(req, res) {
     }
 
   }
+
 
   res.status(200).json({
     status: "ok"
