@@ -120,7 +120,7 @@
         "aspectMode": "cover",
         "action": {
           "type": "uri",
-          "uri": "https://www.google.com/maps/d/u/0/edit?mid=1xPSPoun-KnX2nhrSdOKUC9UgXxP61MY&usp=sharing"
+          "uri": "https://www.google.com/maps/d/viewer?mid=1xPSPoun-KnX2nhrSdOKUC9UgXxP61MY&usp=sharing"
         }
       },
       "body": {
