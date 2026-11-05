@@ -156,9 +156,9 @@ export default async function handler(req, res) {
           {
             type: "image",
             originalContentUrl:
-              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png",
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v3.png",
             previewImageUrl:
-              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v1-full.png"
+              "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/menu/menu-v3.png"
           }
         );
 
