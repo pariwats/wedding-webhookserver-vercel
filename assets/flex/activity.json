@@ -39,7 +39,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Video Guestbook",
+            "text": "วีดีโออวยพร",
             "weight": "bold",
             "size": "xl",
             "align": "center"
@@ -62,7 +62,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "LEGO",
+            "text": "เลโก้",
             "weight": "bold",
             "size": "xl",
             "align": "center"
@@ -85,7 +85,7 @@
         "contents": [
           {
             "type": "text",
-            "text": "Sand Ceremony",
+            "text": "เททรายอวยพร",
             "weight": "bold",
             "size": "xl",
             "align": "center"
