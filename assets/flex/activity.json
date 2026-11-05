@@ -51,7 +51,7 @@
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-03-v2.png",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-03-v3.png",
         "size": "full",
         "aspectRatio": "1:1",
         "aspectMode": "cover"
@@ -62,7 +62,30 @@
         "contents": [
           {
             "type": "text",
-            "text": "กิจกรรมที่ 3",
+            "text": "LEGO",
+            "weight": "bold",
+            "size": "xl",
+            "align": "center"
+          }
+        ]
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://raw.githubusercontent.com/pariwats/MNTGT4EVER/main/assets/activity/activity-04-v1.png",
+        "size": "full",
+        "aspectRatio": "1:1",
+        "aspectMode": "cover"
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Sand Ceremony",
             "weight": "bold",
             "size": "xl",
             "align": "center"
